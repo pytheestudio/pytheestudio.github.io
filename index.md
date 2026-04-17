@@ -11,19 +11,20 @@
        Pink + Green Magical Palette
     ========================== */
     :root {
-      --primary: #ff4fb3;   /* magical pink */
-      --accent: #7be495;    /* soft nature green */
-      --bg: #fff7fb;        /* soft pink-white background */
-      --text: #2b2b2b;      /* dark readable text */
-      --card: #ffffff;      /* clean card */
-      --border: #f2c6de;    /* soft pink border */
+      --primary: #ff4fb3;
+      --accent: #7be495;
+      --bg: #fff7fb;
+      --text: #2b2b2b;
+      --card: #ffffff;
+      --border: #f2c6de;
     }
 
+    /* UPDATED TYPOGRAPHY */
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: Arial, sans-serif;
+      font-family: "Marola", "Defante Reduced", "Bootzytm", Arial, sans-serif;
     }
 
     body {
@@ -43,7 +44,8 @@
 
     header h1 {
       color: var(--primary);
-      font-size: 20px;
+      font-size: 24px;
+      font-weight: 900;
     }
 
     nav a {
@@ -51,6 +53,7 @@
       text-decoration: none;
       color: var(--text);
       transition: 0.2s;
+      font-weight: 600;
     }
 
     nav a:hover {
@@ -59,33 +62,36 @@
 
     /* HERO SECTION */
     .hero {
-      padding: 80px 20px;
+      padding: 90px 20px;
       text-align: center;
       background: linear-gradient(135deg, #ffe4f2, #e6fff0);
     }
 
     .hero h2 {
-      font-size: 36px;
+      font-size: 44px;
       color: var(--primary);
       margin-bottom: 10px;
+      font-weight: 900;
     }
 
     .hero p {
       max-width: 600px;
       margin: 0 auto 20px;
       color: #444;
+      font-size: 18px;
     }
 
     .btn {
       display: inline-block;
-      padding: 10px 20px;
+      padding: 12px 22px;
       margin: 5px;
-      border-radius: 20px;
+      border-radius: 22px;
       text-decoration: none;
       color: white;
       background: var(--primary);
       transition: 0.2s ease;
       box-shadow: 0 4px 10px rgba(255, 79, 179, 0.2);
+      font-weight: 700;
     }
 
     .btn:hover {
@@ -99,28 +105,30 @@
     }
 
     section {
-      padding: 60px 20px;
+      padding: 70px 20px;
       max-width: 900px;
       margin: auto;
     }
 
     h3 {
       color: var(--primary);
-      margin-bottom: 20px;
+      margin-bottom: 30px;
       text-align: center;
+      font-size: 32px;
+      font-weight: 900;
     }
 
     /* SERVICES */
     .services {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
       gap: 20px;
     }
 
     .card {
-      padding: 20px;
+      padding: 24px;
       border: 1px solid var(--border);
-      border-radius: 15px;
+      border-radius: 16px;
       background: var(--card);
       box-shadow: 0 5px 15px rgba(0,0,0,0.05);
       transition: 0.2s;
@@ -134,6 +142,13 @@
     .card h4 {
       color: var(--primary);
       margin-bottom: 10px;
+      font-size: 18px;
+      font-weight: 900;
+    }
+
+    .card p {
+      font-size: 15px;
+      font-weight: 500;
     }
 
     /* CONTACT */
@@ -151,16 +166,18 @@
       border-radius: 10px;
       background: #fff;
       color: var(--text);
+      font-family: inherit;
     }
 
     button {
-      padding: 10px;
+      padding: 12px;
       border: none;
       background: var(--primary);
       color: white;
       cursor: pointer;
-      border-radius: 20px;
+      border-radius: 22px;
       transition: 0.2s;
+      font-weight: 700;
     }
 
     button:hover {
@@ -195,7 +212,7 @@
 
     <p>
       Pythee Studio helps small businesses integrate AI, automate workflows,
-      and modernize their websites for a smarter digital presence.
+      and modernize their digital presence for smarter growth.
     </p>
 
     <a class="btn" href="#contact">Book a Consultation</a>
@@ -206,25 +223,37 @@
     <h3>Services</h3>
 
     <div class="services">
+
       <div class="card">
-        <h4>AI Automation</h4>
-        <p>Streamline repetitive tasks using AI tools.</p>
+        <h4>Website Design & Maintenance</h4>
+        <p>Website design, modernization, and ongoing maintenance.</p>
       </div>
 
       <div class="card">
-        <h4>Chatbots</h4>
-        <p>Improve customer support with AI assistants.</p>
+        <h4>Branding & Digital Presence</h4>
+        <p>Branding, audits, and digital presence optimization.</p>
       </div>
 
       <div class="card">
-        <h4>Website Modernization</h4>
-        <p>Upgrade outdated websites into modern experiences.</p>
+        <h4>Social Media</h4>
+        <p>Strategy and content creation including photo and video.</p>
       </div>
 
       <div class="card">
-        <h4>AI Consulting</h4>
-        <p>Get guidance on how to use AI in your business.</p>
+        <h4>Analytics & Growth</h4>
+        <p>Performance tracking, analytics, and growth optimization.</p>
       </div>
+
+      <div class="card">
+        <h4>AI Integration</h4>
+        <p>Implement AI tools and automation into your business systems.</p>
+      </div>
+
+      <div class="card">
+        <h4>AI Automation & Consulting</h4>
+        <p>Streamline workflows, chatbots, and AI-driven solutions.</p>
+      </div>
+
     </div>
   </section>
 
