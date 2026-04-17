@@ -1,5 +1,3 @@
-# pytheestudio.github.io
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,13 +8,15 @@
   <style>
     /* =========================
        CUSTOMIZATION: COLORS
-       Change these to update the theme
+       Red & Black Theme
     ========================== */
     :root {
-      --primary: #1e3a8a;   /* main blue */
-      --accent: #38bdf8;    /* light blue accent */
-      --bg: #ffffff;
-      --text: #111827;
+      --primary: #ff1e1e;   /* main red */
+      --accent: #b30000;    /* dark red accent */
+      --bg: #0a0a0a;        /* black background */
+      --text: #f5f5f5;      /* light text */
+      --card: #141414;      /* dark card bg */
+      --border: #2a2a2a;    /* subtle border */
     }
 
     * {
@@ -37,7 +37,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      border-bottom: 1px solid #eee;
+      border-bottom: 1px solid var(--border);
     }
 
     header h1 {
@@ -49,6 +49,10 @@
       margin-left: 15px;
       text-decoration: none;
       color: var(--text);
+    }
+
+    nav a:hover {
+      color: var(--primary);
     }
 
     /* HERO SECTION */
@@ -66,6 +70,7 @@
     .hero p {
       max-width: 600px;
       margin: 0 auto 20px;
+      color: #cccccc;
     }
 
     .btn {
@@ -76,10 +81,16 @@
       text-decoration: none;
       color: white;
       background: var(--primary);
+      transition: 0.2s ease;
+    }
+
+    .btn:hover {
+      background: var(--accent);
     }
 
     .btn.secondary {
-      background: var(--accent);
+      background: #222;
+      border: 1px solid var(--primary);
     }
 
     section {
@@ -103,8 +114,14 @@
 
     .card {
       padding: 20px;
-      border: 1px solid #eee;
+      border: 1px solid var(--border);
       border-radius: 10px;
+      background: var(--card);
+    }
+
+    .card h4 {
+      color: var(--primary);
+      margin-bottom: 10px;
     }
 
     /* CONTACT */
@@ -118,8 +135,10 @@
 
     input, textarea {
       padding: 10px;
-      border: 1px solid #ccc;
+      border: 1px solid var(--border);
       border-radius: 5px;
+      background: #111;
+      color: var(--text);
     }
 
     button {
@@ -131,21 +150,22 @@
       border-radius: 5px;
     }
 
+    button:hover {
+      background: var(--accent);
+    }
+
     footer {
       text-align: center;
       padding: 20px;
-      border-top: 1px solid #eee;
+      border-top: 1px solid var(--border);
       font-size: 14px;
+      color: #888;
     }
   </style>
 </head>
 
 <body>
 
-  <!-- =========================
-       HEADER
-       CUSTOMIZATION: Edit nav links here
-  ========================== -->
   <header>
     <h1>Pythee Studio</h1>
     <nav>
@@ -155,27 +175,21 @@
     </nav>
   </header>
 
-  <!-- HERO -->
   <div class="hero">
-    <!-- CUSTOMIZATION: Change headline here -->
     <h2>Bring AI Into Your Business</h2>
 
-    <!-- CUSTOMIZATION: Change description here -->
     <p>
       Pythee Studio helps small businesses integrate AI, automate workflows,
       and modernize their websites for a smarter digital presence.
     </p>
 
-    <!-- CUSTOMIZATION: Replace links with booking tool -->
     <a class="btn" href="#contact">Book a Consultation</a>
     <a class="btn secondary" href="#services">View Services</a>
   </div>
 
-  <!-- SERVICES -->
   <section id="services">
     <h3>Services</h3>
 
-    <!-- CUSTOMIZATION: Add/remove service cards below -->
     <div class="services">
       <div class="card">
         <h4>AI Automation</h4>
@@ -199,34 +213,26 @@
     </div>
   </section>
 
-  <!-- ABOUT -->
   <section id="about">
     <h3>About</h3>
-
-    <!-- CUSTOMIZATION: Edit about text here -->
-    <p style="text-align:center; max-width:700px; margin:auto;">
+    <p style="text-align:center; max-width:700px; margin:auto; color:#cccccc;">
       Pythee Studio helps small businesses adopt AI in a simple, practical way.
       We focus on real results, not technical complexity.
     </p>
   </section>
 
-  <!-- CONTACT -->
   <section id="contact">
     <h3>Contact</h3>
 
-    <!-- CUSTOMIZATION: Connect this form to Formspree, backend, or email service -->
     <form>
       <input type="text" placeholder="Your Name" />
       <input type="email" placeholder="Your Email" />
       <textarea rows="5" placeholder="Your Message"></textarea>
-
       <button type="submit">Send Message</button>
     </form>
   </section>
 
-  <!-- FOOTER -->
   <footer>
-    <!-- CUSTOMIZATION: Change footer text -->
     © 2026 Pythee Studio. All rights reserved.
   </footer>
 
